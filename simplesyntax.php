@@ -33,7 +33,7 @@ add_action('wp_enqueue_scripts', 'ss_load_simplesyntax');
 */
 function ss_load_css() {
 	wp_deregister_style( 'prettify' );
-	wp_register_style('prettify', WP_PLUGIN_URL . '/' . basename(dirname(__FILE__)) . '/assets/prettify2.css');
+	wp_register_style('prettify', WP_PLUGIN_URL . '/' . basename(dirname(__FILE__)) . '/assets/prettify.css');
 	wp_enqueue_style('prettify');
 }
 add_action('wp_enqueue_scripts', 'ss_load_css');
